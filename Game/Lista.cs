@@ -98,12 +98,12 @@ namespace Game
 
         public void InserirFinal() //Lista  circular encadeada com cabeça
         {
-        
+
             if (Início == null)
             {
                 Elemento Head = new Elemento();
                 Head.Cor = "White";
-                Head.Num = 0;   
+                Head.Num = 0;
                 Início = Head;
                 Fim = Head;
                 Head.Prox = Fim;
@@ -116,7 +116,7 @@ namespace Game
                 Novo.Prox = Início;
                 Fim = Novo;
             }
-          
+
         }
 
         private bool Primo(int o)
@@ -170,13 +170,13 @@ namespace Game
                         novo.Prox = aux;
                     }
                 }
-                else if (pos==1) // Se for inserir na primeira posição
+                else if (pos == 1) // Se for inserir na primeira posição
                 {
                     Elemento oldtrack = this.Início.Prox;
                     x.Prox = oldtrack;
                     this.Início.Prox = x;
                 }
-                
+
             }
 
 
@@ -208,10 +208,10 @@ namespace Game
             }
             return Novo;
         } // Cria o elemento com uma cor
-      
+
         public bool VerificarCorExiste(string cor)
-        { 
-            for (Elemento Aux = this.Início.Prox; Aux.Cor!="White";)
+        {
+            for (Elemento Aux = this.Início.Prox; Aux.Cor != "White";)
             {
                 if (cor == Aux.Cor)
                     return true;
@@ -234,9 +234,9 @@ namespace Game
                 Console.WriteLine("Elementos da Lista: {0}\n", Tamanho);
                 Elemento Aux = this.Início.Prox;
                 int pos = 1;
-                while (Aux.Cor!= "White")
+                while (Aux.Cor != "White")
                 {
-                    Console.WriteLine("[{0}] - {1}",pos++,Aux.Cor);
+                    Console.WriteLine("[{0}] - {1}", pos++, Aux.Cor);
                     Aux = Aux.Prox;
                 }
 
@@ -264,7 +264,7 @@ namespace Game
                 return true;
             else
                 return false;
-           
+
         } // Verifica se a lista está 
     }
 }
