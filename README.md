@@ -9,6 +9,6 @@ Game style Zuma in .NET using the struct of data double-linked queue mode head
 
 
 
-Developed By: César Henrique Alves Oncala focus in back-end, Leonardo Aleixo Lopes, Gabriel Jorge Soalheiro Só.
+Developed By: César Henrique Alves Oncala
 
-KeyWords: C#, WinForms, .NET, struct of data double-linked queue mode head, Lista duplamente encadeada modo cabeça
+KeyWords: C#,  .NET, struct of data double-linked queue mode head, Lista duplamente encadeada modo cabeça
